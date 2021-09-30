@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Talking to a bird</title>
+
+</head>
+
+<style>
+
+body{
+  background-color:#8FBC8F;
+}
+
+#prompt{
+  position: absolute;
+  width:90%;
+  left:10%;
+  top:10%;
+  font-size:50px;
+  color:white;
+  font-family:Courier New;
+  text-align:left;
+  font-size:30px;
+}
+
+
+#my-button{
+  position: absolute;
+  display:inline-block;
+  border: 2px solid white;
+  left:10%;
+  width:30%;
+  height:8%;
+  top:30%;
+  background-color:white;
+  font-family:Courier New;
+  cursor:grab;
+}
+
+#speech-div{
+  position: absolute;
+  width:90%;
+  left:10%;
+  top:20%;
+  font-size:50px;
+  color:white;
+  font-family:Courier New;
+  text-align:left;
+  font-size:30px;
+}
+
+#birdRec{
+  position: absolute;
+  top:40%;
+  left:10%;
+  height:15px;
+  opacity:0.2;
+}
+
+</style>
+
+<body>
+
+    <div id="prompt">Which bird do you want to call?</div>
+    <div><button id="my-button">Call</button></div>
+
+    <!-- user speech input -->
+    <div id="speech-div"></div>
+
+    <!-- bird recordings -->
+    <audio id="birdRec" controls src="" type="audio/mpeg">
+    </audio>
+
+    <script src="./scriptsentence.js"></script>
+</body>
+
+</html>
+
+<!-- node ./server.js  -->
